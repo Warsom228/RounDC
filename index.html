@@ -1,4 +1,38 @@
-<div class="Desktop2" style="width: 1920px; height: 14286px; position: relative; background: #F6F6F7; overflow: hidden">
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #F6F6F7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      
+  }
+
+  .Desktop2 {
+      width: 100%;
+      height: auto;
+      position: relative;
+      background: #F6F6F7;
+      overflow: hidden; /* Скрывает всё, что выходит за пределы элемента */
+  }
+
+  /* Стили для экранов с шириной меньше 1920px */
+  @media (max-width: 1920px) {
+      .Desktop2 {
+          width: 100%; /* Занимает всю ширину экрана */
+      }
+  }
+
+  /* Стили для экранов с шириной 1920px и больше */
+  @media (min-width: 1920px) {
+      .Desktop2 {
+          width: 1920px; /* Ограничивает ширину до 1920px */
+          margin: 0 auto; /* Центрирует элемент по горизонтали */
+      }
+  }
+</style>
+<div class="Desktop2" style="width: 1920px; height: 9500px; position: relative; background: #F6F6F7; overflow: hidden">
   <div class="Rectangle12"
     style="width: 1340px; height: 139px; left: 288px; top: 6996px; position: absolute; background: rgba(18, 98, 255, 0.09); border-radius: 42px">
   </div>
