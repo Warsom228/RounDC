@@ -157,6 +157,14 @@
     opacity: 1;
   }
 
+  #menu_btn_1, #menu_btn_2, #menu_btn_3, #menu_btn_4, #menu_btn_5, #menu_btn_6 {
+    outline: none;
+    border: none;
+    background: none;
+    transition: color 0.2s ease; /* Добавляем переход для свойства color */
+  }
+
+
 
 </style>
 
@@ -166,18 +174,18 @@
     <div class="Rectangle3" style="width: 1440px; height: 111px; left: 0px; top: 0px; position: absolute; background: #F6F6F7"></div>
     <img class="202406181815261" style="width: 212px; height: 40px; left: 36px; top: 34px; position: absolute" src="./images/v5_435.png" />
     <div class="Rectangle2" style="width: 944px; height: 40px; left: 281px; top: 33px; position: absolute; background: #E9E9E9; border-radius: 20px; z-index: 2;"></div>
-    <div style="left: 313px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Продукт</div>
-    <div style="left: 418px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">План развития</div>
-    <div style="left: 1132px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Команда</div>
-    <div style="left: 570px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Анализ рынка</div>
-    <div style="left: 717px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Маркетинг и план продаж</div>
-    <div style="left: 954px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Финансовый план</div>
+    <button id="menu_btn_1" style="left: 313px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Продукт</button>
+    <button id="menu_btn_2" style="left: 418px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">План развития</button>
+    <button id="menu_btn_6" style="left: 1132px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Команда</button>
+    <button id="menu_btn_3" style="left: 570px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Анализ рынка</button>
+    <button id="menu_btn_4" style="left: 717px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Маркетинг и план продаж</button>
+    <button id="menu_btn_5" style="left: 954px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Финансовый план</button>
     <button class="Component1" id="button2" style="width: 133px; height: 39px; left: 1258px; top: 33px; position: absolute; outline: none; border: none;">
       <div class="Rectangle1" style="width: 133px; height: 39px; left: 0px; top: 0px; position: absolute; background: #1262FF; border-radius: 20px"></div>
       <div style="left: 16px; top: 11px; position: absolute; color: white; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Написать нам</div>
     </button>
   </div>
-  <div class="3" style="width: 1144px; left: 50px; top: 2943px; position: absolute"><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">План развития </span><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">на 3 года</span></div>
+  <div class="3" style="width: 1144px; left: 50px; top: 2943px; position: absolute"><span id="content-2" style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">План развития </span><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">на 3 года</span></div>
   <div style="left: 288px; top: 11538px; position: absolute; color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Напиши нам!</div>
   <div class="Frame9" style="left: 322px; top: 3388px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
     <div style="width: 400px; color: #1262FF; font-size: 25px; font-family: Normalidad; font-weight: 700; word-wrap: break-word">Анализ текущего состояния платформы:</div>
@@ -220,7 +228,7 @@
     <div style="width: 466px; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Создание комьюнити фаундеров и инвесторов</div>
   </div>
   <div class="Group" style="width: 1338px; height: 842.23px; left: 50px; top: 7122px; position: absolute">
-    <div style="width: 1144px; height: 260px; left: 0px; top: 0px; position: absolute"><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Маркетинг <br/></span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">и план продаж</span></div>
+    <div style="width: 1144px; height: 260px; left: 0px; top: 0px; position: absolute"><span id="content-4" style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Маркетинг <br/></span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">и план продаж</span></div>
     <div class="Ai" style="width: 685px; left: 0px; top: 425px; position: absolute"><span style="color: #1262FF; font-size: 25px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Наш продукт </span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">- </span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">это не просто база инвесторов, но и </span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 700; word-wrap: break-word">интеллектуальный помощник основателя, использующий AI для оптимизации фандрайзинга.</span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">, что является конкурентным преимуществом среди аналогов.</span></div>
     <div class="Frame19" style="width: 477px; height: 121px; left: 0px; top: 282px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
       <div style="width: 477px; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Позиционирование</div>
@@ -256,7 +264,7 @@
     <div style="width: 594px; left: 768px; top: 107px; position: absolute; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Наш продукт – тиндер для фаундеров инвесторов, отвечающий всем потребностям с обеих сторон</div>
   </div>
   <div class="2" style="width: 1340px; height: 495px; left: 52px; top: 768px; position: absolute">
-    <div style="width: 548px; height: 103px; left: 0px; top: 0px; position: absolute"><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Кто </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">мы?</span></div>
+    <div id="content-1" style="width: 548px; height: 103px; left: 0px; top: 0px; position: absolute"><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Кто </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">мы?</span></div>
     <div style="width: 240px; left: 0px; top: 152px; position: absolute; color: #1262FF; font-size: 40px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Продукт</div>
     <div style="width: 601px; height: 121px; left: 2px; top: 226px; position: absolute"><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 700; word-wrap: break-word">Тиндер для фаундеров и инвесторов —</span><span style="color: #1262FF; font-size: 25px; font-family: Normalidad; font-weight: 700; word-wrap: break-word"> </span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">платформа, на которой налаживаются рабочие связи между теми, кто нуждается в инвестициях и теми, кто инвестирует.<br/>     </span></div>
     <button class="Frame2" id="button3" style="width: 265px; height: 73px; left: 0px; top: 422px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex; outline: none; border: none;">
@@ -305,7 +313,7 @@
     <div style="left: 0px; top: 260px; position: absolute; color: black; font-size: 64px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">25042438 шт</div>
     <div style="left: 0px; top: 412px; position: absolute; color: black; font-size: 64px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">119963 шт</div>
     <div style="left: 1px; top: 577px; position: absolute; color: black; font-size: 64px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">23993 шт</div>
-    <div style="width: 1144px; height: 260px; left: 0px; top: 0px; position: absolute"><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Анализ </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">рынка</span></div>
+    <div style="width: 1144px; height: 260px; left: 0px; top: 0px; position: absolute"><span id="content-3" style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Анализ </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">рынка</span></div>
     <div class="Tam" style="width: 112px; height: 54px; left: 0px; top: 345px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">TAM</div>
     <div class="Tam" style="left: 1038px; top: 249px; position: absolute; color: white; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">TAM</div>
     <div class="Sam" style="width: 112px; height: 54px; left: 0px; top: 497px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">SAM</div>
@@ -385,7 +393,7 @@
     <div class="346" style="left: 7px; top: 380px; position: absolute; color: black; font-size: 48px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">353 346 $ </div>
     <div class="109262" style="left: 469px; top: 380px; position: absolute; color: black; font-size: 48px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">8 109 262 $ </div>
     <div class="907230" style="left: 971px; top: 380px; position: absolute; color: black; font-size: 48px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">38 907 230 $ </div>
-    <div style="width: 1138px; height: 260px; left: 5px; top: 0px; position: absolute"><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">ФИНАНСОВЫЙ </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">ПЛАН</span></div>
+    <div style="width: 1138px; height: 260px; left: 5px; top: 0px; position: absolute"><span id="content-5" style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">ФИНАНСОВЫЙ </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">ПЛАН</span></div>
     <div class="2024" style="left: 6px; top: 445px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">За 2024 год </div>
     <div class="2025" style="left: 469px; top: 445px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">За 2025 год </div>
     <div class="2026" style="left: 971px; top: 445px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">За 2026 год </div>
@@ -420,7 +428,7 @@
     <div class="2" style="width: 662px; left: 688px; top: 1248px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Раунд 2: на более длительный срок</div>
   </div>
   <div class="Group7" style="width: 1318px; height: 766px; left: 55px; top: 10672px; position: absolute">
-    <div style="left: 365px; top: 0px; position: absolute; color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Команда</div>
+    <div id="content-6" style="left: 365px; top: 0px; position: absolute; color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Команда</div>
     <div class="Ceo" style="left: 149px; top: 545px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">CEO</div>
     <div class="CoFounder" style="left: 562px; top: 545px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Co-Founder</div>
     <div class="CoFounder" style="left: 1037px; top: 545px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Co-Founder</div>
@@ -435,7 +443,7 @@
     <div class="CoFounderRoundcComExVpMailRu" style="width: 349px; left: 969px; top: 641px; position: absolute; text-align: center"><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Co-Founder</span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; text-decoration: underline; word-wrap: break-word"> Roundc.com</span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word"> с ex-VP</span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; text-decoration: underline; word-wrap: break-word"> Mail.ru</span></div>
     <img class="Ellipse13" style="width: 342px; height: 342px; left: 18px; top: 172px; position: absolute; box-shadow: 0px 4px 100px rgba(18, 98, 255, 0.30); border-radius: 9999px" src="./images/v23_1539.png" />
     <img class="Ellipse14" style="width: 342px; height: 342px; left: 498px; top: 172px; position: absolute; box-shadow: 0px 4px 100px rgba(18, 98, 255, 0.30); border-radius: 9999px" src="./images/v23_1540.png" />
-    <img class="Ellipse15" style="width: 342px; hei0ght: 342px; left: 972px; top: 172px; position: absolute; box-shadow: 0px 4px 100px rgba(18, 98, 255, 0.30); border-radius: 9999px" src="./images/v23_1541.png" />
+    <img class="Ellipse15" style="width: 342px; height: 342px; left: 972px; top: 172px; position: absolute; box-shadow: 0px 4px 100px rgba(18, 98, 255, 0.30); border-radius: 9999px" src="./images/v23_1541.png" />
   </div>
   <div class="Component3" style="width: 1214px; height: 583px; left: 143px; top: 11686px; position: absolute">
     <div class="Rectangle20" style="width: 1150px; height: 539px; left: 0px; top: 19px; position: absolute; background: white; border-radius: 62px"></div>
@@ -514,4 +522,165 @@
     });
   });
 
+  const menu_btn_1 = document.getElementById('menu_btn_1');
+  const menu_btn_2 = document.getElementById('menu_btn_2');
+  const menu_btn_3 = document.getElementById('menu_btn_3');
+  const menu_btn_4 = document.getElementById('menu_btn_4');
+  const menu_btn_5 = document.getElementById('menu_btn_5');
+  const menu_btn_6 = document.getElementById('menu_btn_6');
+
+  menu_btn_1.addEventListener('mouseover', () => {
+    menu_btn_1.style.color = "#1262FF";
+    menu_btn_2.style.color = "#C6C6C6";
+    menu_btn_3.style.color = "#C6C6C6";
+    menu_btn_4.style.color = "#C6C6C6";
+    menu_btn_5.style.color = "#C6C6C6";
+    menu_btn_6.style.color = "#C6C6C6";
+  });
+
+  menu_btn_1.addEventListener('mouseout', () => {
+    menu_btn_1.style.color = "black";
+    menu_btn_2.style.color = "black";
+    menu_btn_3.style.color = "black";
+    menu_btn_4.style.color = "black";
+    menu_btn_5.style.color = "black";
+    menu_btn_6.style.color = "black";
+
+  });
+
+  menu_btn_2.addEventListener('mouseover', () => {
+    menu_btn_1.style.color = "#C6C6C6";
+    menu_btn_2.style.color = "#1262FF";
+    menu_btn_3.style.color = "#C6C6C6";
+    menu_btn_4.style.color = "#C6C6C6";
+    menu_btn_5.style.color = "#C6C6C6";
+    menu_btn_6.style.color = "#C6C6C6";
+  });
+
+  menu_btn_2.addEventListener('mouseout', () => {
+    menu_btn_1.style.color = "black";
+    menu_btn_2.style.color = "black";
+    menu_btn_3.style.color = "black";
+    menu_btn_4.style.color = "black";
+    menu_btn_5.style.color = "black";
+    menu_btn_6.style.color = "black";
+  });
+
+  menu_btn_3.addEventListener('mouseover', () => {
+    menu_btn_1.style.color = "#C6C6C6";
+    menu_btn_2.style.color = "#C6C6C6";
+    menu_btn_3.style.color = "#1262FF";
+    menu_btn_4.style.color = "#C6C6C6";
+    menu_btn_5.style.color = "#C6C6C6";
+    menu_btn_6.style.color = "#C6C6C6";
+  });
+
+  menu_btn_3.addEventListener('mouseout', () => {
+    menu_btn_1.style.color = "black";
+    menu_btn_2.style.color = "black";
+    menu_btn_3.style.color = "black";
+    menu_btn_4.style.color = "black";
+    menu_btn_5.style.color = "black";
+    menu_btn_6.style.color = "black";
+  });
+
+  menu_btn_4.addEventListener('mouseover', () => {
+    menu_btn_1.style.color = "#C6C6C6";
+    menu_btn_2.style.color = "#C6C6C6";
+    menu_btn_3.style.color = "#C6C6C6";
+    menu_btn_4.style.color = "#1262FF";
+    menu_btn_5.style.color = "#C6C6C6";
+    menu_btn_6.style.color = "#C6C6C6";
+  });
+
+  menu_btn_4.addEventListener('mouseout', () => {
+    menu_btn_1.style.color = "black";
+    menu_btn_2.style.color = "black";
+    menu_btn_3.style.color = "black";
+    menu_btn_4.style.color = "black";
+    menu_btn_5.style.color = "black";
+    menu_btn_6.style.color = "black";
+  });
+
+  menu_btn_5.addEventListener('mouseover', () => {
+    menu_btn_1.style.color = "#C6C6C6";
+    menu_btn_2.style.color = "#C6C6C6";
+    menu_btn_3.style.color = "#C6C6C6";
+    menu_btn_4.style.color = "#C6C6C6";
+    menu_btn_5.style.color = "#1262FF";
+    menu_btn_6.style.color = "#C6C6C6";
+  });
+
+  menu_btn_5.addEventListener('mouseout', () => {
+    menu_btn_1.style.color = "black";
+    menu_btn_2.style.color = "black";
+    menu_btn_3.style.color = "black";
+    menu_btn_4.style.color = "black";
+    menu_btn_5.style.color = "black";
+    menu_btn_6.style.color = "black";
+  });
+
+  menu_btn_6.addEventListener('mouseover', () => {
+    menu_btn_1.style.color = "#C6C6C6";
+    menu_btn_2.style.color = "#C6C6C6";
+    menu_btn_3.style.color = "#C6C6C6";
+    menu_btn_4.style.color = "#C6C6C6";
+    menu_btn_5.style.color = "#C6C6C6";
+    menu_btn_6.style.color = "#1262FF";
+  });
+
+  menu_btn_6.addEventListener('mouseout', () => {
+    menu_btn_1.style.color = "black";
+    menu_btn_2.style.color = "black";
+    menu_btn_3.style.color = "black";
+    menu_btn_4.style.color = "black";
+    menu_btn_5.style.color = "black";
+    menu_btn_6.style.color = "black";
+  });
+
+  const content_1 = document.getElementById('content-1');
+  const content_2 = document.getElementById('content-2');
+  const content_3 = document.getElementById('content-3');
+  const content_4 = document.getElementById('content-4');
+  const content_5 = document.getElementById('content-5');
+  const content_6 = document.getElementById('content-6');
+
+
+
+
+  menu_btn_1.addEventListener('click', () => {
+    content_1.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  menu_btn_2.addEventListener('click', () => {
+    content_2.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  menu_btn_3.addEventListener('click', () => {
+    content_3.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  menu_btn_4.addEventListener('click', () => {
+    content_4.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  menu_btn_5.addEventListener('click', () => {
+    content_5.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  menu_btn_6.addEventListener('click', () => {
+    content_6.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 </script>
