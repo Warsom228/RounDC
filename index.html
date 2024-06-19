@@ -23,40 +23,159 @@
       position: relative;
       background: #F6F6F7;
       overflow: hidden; /* Скрывает всё, что выходит за пределы элемента */
+      
   }
 
   /* Стили для экранов с шириной меньше 1920px */
-  @media (max-width: 1440x) {
+  @media (max-width: 1450px) {
       .Desktop1 {
           width: 100%; /* Занимает всю ширину экрана */
+          overflow: hidden;
       }
   }
 
   /* Стили для экранов с шириной 1920px и больше */
-  @media (min-width: 1440px) {
+  @media (min-width: 1450px) {
       .Desktop1 {
           width: 1440px; /* Ограничивает ширину до 1920px */
           margin: 0 auto; /* Центрирует элемент по горизонтали */
+          overflow: initial;
       }
   }
+
+  #button1 {
+    transition: box-shadow 0.3s, background-color 0.3s; /* Изменяем переход на background-color */
+  }
+
+  #button1:hover { /* При наведении */
+    box-shadow: 0px 0px 60px rgba(18, 98, 255, 0.8); /* Большая круглая тень */
+  border-radius: 39px; /* Сохраняем закругленные углы кнопки */
+  }
+
+  #button1:active { /* При нажатии */
+    background-color: #DEE9FF; 
+    box-shadow: 0px 0px 10px rgba(18, 98, 255, 0.8); /* Меньшая круглая тень */
+    border-radius: 39px; 
+  }
+
+  #button2 {
+    transition: box-shadow 0.3s, background-color 0.3s; /* Изменяем переход на background-color */
+    z-index: 2;
+    outline: none;
+    border: none;
+  }
+
+  #button2:hover { /* При наведении */
+    box-shadow: 0px 0px 60px rgba(18, 98, 255, 0.8); /* Большая круглая тень */
+    border-radius: 39px; /* Сохраняем закругленные углы кнопки */
+  }
+
+  #button2:active { /* При нажатии */
+    background-color: #DEE9FF; 
+    box-shadow: 0px 0px 10px rgba(18, 98, 255, 0.8); /* Меньшая круглая тень */
+    border-radius: 39px; 
+  }
+
+  #button3 {
+    transition: box-shadow 0.3s, background-color 0.3s; /* Изменяем переход на background-color */
+    z-index: 2;
+    outline: none;
+    border: none;
+  }
+
+  #button3:hover { /* При наведении */
+    box-shadow: 0px 0px 60px rgba(18, 98, 255, 0.8); /* Большая круглая тень */
+    border-radius: 39px; /* Сохраняем закругленные углы кнопки */
+  }
+
+  #button3:active { /* При нажатии */
+    background-color: #DEE9FF; 
+    box-shadow: 0px 0px 10px rgba(18, 98, 255, 0.8); /* Меньшая круглая тень */
+    border-radius: 39px; 
+  }
+
+  #button4 {
+    transition: box-shadow 0.3s, background-color 0.3s; /* Изменяем переход на background-color */
+    z-index: 2;
+    outline: none;
+    border: none;
+  }
+
+  #button4:hover { /* При наведении */
+    box-shadow: 0px 0px 60px rgba(18, 98, 255, 0.8); /* Большая круглая тень */
+    border-radius: 39px; /* Сохраняем закругленные углы кнопки */
+  }
+
+  #button4:active { /* При нажатии */
+    background-color: #DEE9FF; 
+    box-shadow: 0px 0px 10px rgba(18, 98, 255, 0.8); /* Меньшая круглая тень */
+    border-radius: 39px; 
+  }
+
+  #button5 {
+    transition: box-shadow 0.3s, background-color 0.3s; /* Изменяем переход на background-color */
+    z-index: 2;
+    outline: none;
+    border: none;
+  }
+
+  #button5:hover { /* При наведении */
+    box-shadow: 0px 0px 60px rgba(18, 98, 255, 0.8); /* Большая круглая тень */
+    border-radius: 39px; /* Сохраняем закругленные углы кнопки */
+  }
+
+  #button5:active { /* При нажатии */
+    background-color: #DEE9FF; 
+    box-shadow: 0px 0px 10px rgba(18, 98, 255, 0.8); /* Меньшая круглая тень */
+    border-radius: 39px; 
+  }
+
+  #button6 {
+    transition: box-shadow 0.3s, background-color 0.3s; /* Изменяем переход на background-color */
+    z-index: 2;
+    outline: none;
+    border: none;
+  }
+
+  #button6:hover { /* При наведении */
+    box-shadow: 0px 0px 60px rgba(18, 98, 255, 0.8); /* Большая круглая тень */
+    border-radius: 39px; /* Сохраняем закругленные углы кнопки */
+  }
+
+  #button6:active { /* При нажатии */
+    background-color: #DEE9FF; 
+    box-shadow: 0px 0px 10px rgba(18, 98, 255, 0.8); /* Меньшая круглая тень */
+    border-radius: 39px; 
+  }
+
+  * { /* Применяем стили ко всем элементам */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  }
+
+  .element-to-show.show {
+    opacity: 1;
+  }
+
+
 </style>
 
 <div class="Desktop1" style="height: 12670px; position: relative; background: #F6F6F7">
   <div class="Vector5" style="width: 0px; height: 1605.50px; left: 130px; top: 3299px; position: absolute; border-radius: 18px; border: 8px #1262FF solid"></div>
-  <div style="width: 1440px; height: 111px; left: 0px; top: 0px; position: absolute">
+  <div style="width: 1440px; height: 111px; left: 0px; top: 0px; position: absolute;">
     <div class="Rectangle3" style="width: 1440px; height: 111px; left: 0px; top: 0px; position: absolute; background: #F6F6F7"></div>
     <img class="202406181815261" style="width: 212px; height: 40px; left: 36px; top: 34px; position: absolute" src="./images/v5_435.png" />
-    <div class="Rectangle2" style="width: 944px; height: 40px; left: 281px; top: 33px; position: absolute; background: #E9E9E9; border-radius: 20px"></div>
-    <div style="left: 313px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Продукт</div>
-    <div style="left: 418px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">План развития</div>
-    <div style="left: 1132px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Команда</div>
-    <div style="left: 570px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Анализ рынка</div>
-    <div style="left: 717px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Маркетинг и план продаж</div>
-    <div style="left: 954px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Финансовый план</div>
-    <div class="Component1" style="width: 133px; height: 39px; left: 1258px; top: 36px; position: absolute">
+    <div class="Rectangle2" style="width: 944px; height: 40px; left: 281px; top: 33px; position: absolute; background: #E9E9E9; border-radius: 20px; z-index: 2;"></div>
+    <div style="left: 313px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Продукт</div>
+    <div style="left: 418px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">План развития</div>
+    <div style="left: 1132px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Команда</div>
+    <div style="left: 570px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Анализ рынка</div>
+    <div style="left: 717px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Маркетинг и план продаж</div>
+    <div style="left: 954px; top: 44px; position: absolute; color: black; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; z-index: 2;">Финансовый план</div>
+    <button class="Component1" id="button2" style="width: 133px; height: 39px; left: 1258px; top: 33px; position: absolute; outline: none; border: none;">
       <div class="Rectangle1" style="width: 133px; height: 39px; left: 0px; top: 0px; position: absolute; background: #1262FF; border-radius: 20px"></div>
       <div style="left: 16px; top: 11px; position: absolute; color: white; font-size: 14px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Написать нам</div>
-    </div>
+    </button>
   </div>
   <div class="3" style="width: 1144px; left: 50px; top: 2943px; position: absolute"><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">План развития </span><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">на 3 года</span></div>
   <div style="left: 288px; top: 11538px; position: absolute; color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Напиши нам!</div>
@@ -140,9 +259,9 @@
     <div style="width: 548px; height: 103px; left: 0px; top: 0px; position: absolute"><span style="color: #1262FF; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Кто </span><span style="color: black; font-size: 96px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">мы?</span></div>
     <div style="width: 240px; left: 0px; top: 152px; position: absolute; color: #1262FF; font-size: 40px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Продукт</div>
     <div style="width: 601px; height: 121px; left: 2px; top: 226px; position: absolute"><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 700; word-wrap: break-word">Тиндер для фаундеров и инвесторов —</span><span style="color: #1262FF; font-size: 25px; font-family: Normalidad; font-weight: 700; word-wrap: break-word"> </span><span style="color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">платформа, на которой налаживаются рабочие связи между теми, кто нуждается в инвестициях и теми, кто инвестирует.<br/>     </span></div>
-    <div class="Frame2" style="width: 265px; height: 73px; left: 0px; top: 422px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+    <button class="Frame2" id="button3" style="width: 265px; height: 73px; left: 0px; top: 422px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex; outline: none; border: none;">
       <div style="color: white; font-size: 32px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Подробнее</div>
-    </div>
+    </button>
     <div style="width: 717.03px; height: 328px; left: 622.97px; top: 163px; position: absolute">
       <div class="Rectangle5" style="width: 208.33px; height: 69px; left: 0px; top: 198px; position: absolute; border-radius: 34.50px; border: 1px #1262FF solid; background: white;"></div>
       <div class="Rectangle8" style="width: 172.94px; height: 69px; left: 544.09px; top: 194px; position: absolute; border-radius: 34.50px; border: 1px #1262FF solid; z-index: 6; background: white;"></div>
@@ -151,7 +270,7 @@
       <div class="Ai" style="width: 491.50px; height: 34px; left: 127.43px; top: 62px; position: absolute; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Подбор инвесторов с помощью  AI</div>
       <div class="YourProject" style="width: 161.81px; left: 23.26px; top: 216px; position: absolute; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Your project </div>
       <div class="Answers" style="width: 118.32px; left: 571.40px; top: 212px; position: absolute; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word; z-index: 7;">Answers</div>
-      <div class="Ai" style="width: 29.33px; left: 250.81px; top: 217px; position: absolute; color: white; font-size: 25px; font-family: Normalidad; font-weight: 500; word-wrap: break-word; z-index: 7;">AI</div>
+      <div class="Ai" style="width: 29.33px; left: 253.81px; top: 217px; position: absolute; color: white; font-size: 25px; font-family: Normalidad; font-weight: 500; word-wrap: break-word; z-index: 7;">AI</div>
       <div class="Investor1Investor2Investor3Investor4" style="width: 133.49px; left: 359.02px; top: 173px; position: absolute; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word; z-index: 7;">Investor 1<br/>Investor 2<br/>Investor 3<br/>Investor 4</div>
       <img class="202406181815261" style="width: 280.14px; height: 57px; left: 250.81px; top: 0px; position: absolute" src="./images/v5_435.png" />
       <div class="Vector1" style="width: 18.20px; height: 0px; left: 208.33px; top: 234px; position: absolute; border: 1px #1262FF solid"></div>
@@ -216,9 +335,9 @@
     <div style="left: 820px; top: 376px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Расширение</div>
     <div style="left: 820px; top: 179px; position: absolute; color: #1262FF; font-size: 32px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Посевная стадия</div>
     <div style="left: 0px; top: 0px; position: absolute; color: #1262FF; font-size: 40px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Целевая аудитория</div>
-    <div class="Frame7" style="width: 262px; height: 73px; left: 1048px; top: 511px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+    <button class="Frame7" id="button4" style="width: 262px; height: 73px; left: 1048px; top: 511px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
       <div style="color: white; font-size: 32px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Подробнее</div>
-    </div>
+    </button>
   </div>
   <img class="1" style="width: 663.43px; height: 663.43px; left: -469px; top: 5327.20px; position: absolute; transform: rotate(-47deg); transform-origin: 0 0" src="./images/v10_593.png" />
   <img class="2" style="width: 832.35px; height: 832.35px; left: 1542.62px; top: 6125.65px; position: absolute; transform: rotate(-140deg); transform-origin: 0 0" src="./images/v10_593.png" />
@@ -250,17 +369,17 @@
     <div class="2025" style="width: 409px; left: 497px; top: 170px; position: absolute; color: #1262FF; font-size: 25px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Количество проданных подписок за 2025 год </div>
     <div class="2026" style="width: 347px; left: 999px; top: 170px; position: absolute; color: #1262FF; font-size: 25px; font-family: Normalidad; font-weight: 500; word-wrap: break-word">Количество проданных подписок за 2026 год </div>
     <div style="left: 0px; top: 0px; position: absolute; color: #1262FF; font-size: 40px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">План продаж</div>
-    <div class="Frame8" style="width: 262px; height: 73px; left: 529px; top: 286px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+    <button class="Frame8" id="button5" style="width: 262px; height: 73px; left: 529px; top: 286px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
       <div style="color: white; font-size: 32px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Подробнее</div>
-    </div>
+    </button>
   </div>
   <div style="width: 1340px; height: 519px; left: 50px; top: 149px; position: absolute">
     <div class="Rectangle18" style="width: 1340px; height: 505px; left: 0px; top: 14px; position: absolute"></div>
     <div class="DataRoomRoundc" style="width: 846px; left: 0px; top: 0px; position: absolute"><span style="color: black; font-size: 120px; font-family: Zen Dots; font-weight: 400; line-height: 120px; word-wrap: break-word">Data Room Roun</span><span style="color: #1262FF; font-size: 120px; font-family: Zen Dots; font-weight: 400; line-height: 120px; word-wrap: break-word">DC</span></div>
     <div class="Ai" style="width: 683px; left: 0px; top: 255px; position: absolute; color: black; font-size: 36px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Ускорение процесса фандрайзинга при помощи AI</div>
-    <div class="Frame2" style="width: 262px; height: 73px; left: 0px; top: 446px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+    <button class="Frame2" id="button1" style="width: 262px; height: 73px; left: 0px; top: 446px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex; outline: none; border: none;">
       <div style="color: white; font-size: 32px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Подробнее</div>
-    </div>
+    </button>
   </div>
   <div class="Group6" style="width: 1350px; height: 1328px; left: 48px; top: 9244px; position: absolute">
     <div class="346" style="left: 7px; top: 380px; position: absolute; color: black; font-size: 48px; font-family: Normalidad; font-weight: 700; text-transform: uppercase; word-wrap: break-word">353 346 $ </div>
@@ -320,20 +439,20 @@
   </div>
   <div class="Component3" style="width: 1214px; height: 583px; left: 143px; top: 11686px; position: absolute">
     <div class="Rectangle20" style="width: 1150px; height: 539px; left: 0px; top: 19px; position: absolute; background: white; border-radius: 62px"></div>
-    <div class="Vector15" style="width: 614px; height: 0px; left: 76px; top: 139px; position: absolute; border-radius: 18px; border: 3px rgba(18, 98, 255, 0.20) solid"></div>
-    <div class="Vector16" style="width: 614px; height: 0px; left: 76px; top: 224px; position: absolute; border-radius: 18px; border: 3px rgba(18, 98, 255, 0.20) solid"></div>
-    <div class="Vector17" style="width: 614px; height: 0px; left: 76px; top: 307px; position: absolute; border-radius: 18px; border: 3px rgba(18, 98, 255, 0.20) solid"></div>
-    <div class="Vector18" style="width: 614px; height: 0px; left: 76px; top: 388px; position: absolute; border-radius: 18px; border: 3px rgba(18, 98, 255, 0.20) solid"></div>
+    <div class="Vector15" style="width: 614px; height: 0px; left: 76px; top: 139px; position: absolute; border-radius: 18px; border: 2px rgba(18, 98, 255, 0.20) solid"></div>
+    <div class="Vector16" style="width: 614px; height: 0px; left: 76px; top: 224px; position: absolute; border-radius: 18px; border: 2px rgba(18, 98, 255, 0.20) solid"></div>
+    <div class="Vector17" style="width: 614px; height: 0px; left: 76px; top: 307px; position: absolute; border-radius: 18px; border: 2px rgba(18, 98, 255, 0.20) solid"></div>
+    <div class="Vector18" style="width: 614px; height: 0px; left: 76px; top: 388px; position: absolute; border-radius: 18px; border: 2px rgba(18, 98, 255, 0.20) solid"></div>
     <div style="left: 76px; top: 96px; position: absolute; opacity: 0.30; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Фио</div>
     <div style="left: 76px; top: 180px; position: absolute; opacity: 0.30; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Почта</div>
     <div style="left: 76px; top: 267px; position: absolute; opacity: 0.30; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Номер телефона</div>
     <div style="left: 76px; top: 348px; position: absolute; opacity: 0.30; color: black; font-size: 25px; font-family: Normalidad; font-weight: 400; word-wrap: break-word">Комментарий</div>
-    <div class="Frame8" style="width: 262px; height: 73px; left: 60.50px; top: 429px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+    <button class="Frame8" id="button6" style="width: 262px; height: 73px; left: 60.50px; top: 429px; position: absolute; background: #1262FF; border-radius: 39px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
       <div style="color: white; font-size: 32px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Отправить</div>
-    </div>
+    </button>
     <img class="22" style="width: 583px; height: 583px; left: 631px; top: 0px; position: absolute" src="./images/v20_600.png" />
   </div>
-  <img class="1" style="width: 1313.52px; height: 1313.52px; left: 238px; top: 229.38px; position: absolute; transform: rotate(-26.32deg); transform-origin: 0 0" src="./images/v20_600.png" />
+  <img class="1" id="picture1" style="width: 1313.52px; height: 1313.52px; left: 238px; top: 229.38px; position: absolute; transform: rotate(-26.32deg); transform-origin: 0 0; transition: transform 0.2s; z-index: 1;" src="./images/v20_600.png" />
   <img class="33" style="width: 302.25px; height: 302.25px; left: 1313.72px; top: 11323.95px; position: absolute; transform: rotate(-100.82deg); transform-origin: 0 0" src="./images/v20_597.png" />
   <div class="Component5" style="width: 1440px; height: 338px; left: 0px; top: 12343px; position: absolute">
     <div class="Rectangle22" style="width: 1440px; height: 338px; left: 0px; top: 0px; position: absolute; background: #F6F6F7"></div>
@@ -354,3 +473,37 @@
     <div class="Vector20" style="width: 1335.50px; height: 0px; left: 52px; top: 0px; position: absolute; border: 2px #1262FF solid"></div>
   </div>
 </div>
+
+<script>
+  const button = document.getElementById('button1');
+  const image = document.getElementById('picture1');
+
+  button.addEventListener('mouseover', () => {
+    image.style.transform = 'scale(1.05) rotate(-26.32deg)'; 
+  });
+
+  button.addEventListener('mouseout', () => {
+    image.style.transform = 'scale(1) rotate(-26.32deg)'; 
+  });
+
+  const allElements = document.querySelectorAll('*');
+
+  // Добавляем класс element-to-show к каждому элементу
+  allElements.forEach(element => {
+    element.classList.add('element-to-show');
+  });
+
+  const elementsToShow = document.querySelectorAll('.element-to-show');
+
+  window.addEventListener('scroll', () => {
+    elementsToShow.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        element.classList.add('show');
+      } else {
+        element.classList.remove('show'); // Убираем класс show, если элемент не виден
+      }
+    });
+  });
+
+</script>
